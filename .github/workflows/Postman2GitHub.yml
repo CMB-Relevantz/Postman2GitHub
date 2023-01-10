@@ -11,7 +11,7 @@ on:
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,5 +32,5 @@ jobs:
       # Run postman collection
       - name: Run Postman Collection 
         run: |
-          newman run CMBCollections-Copy.json
+          newman run CMBCollections.postman_collection.json
           
