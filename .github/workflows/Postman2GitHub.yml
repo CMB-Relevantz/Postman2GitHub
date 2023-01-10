@@ -32,5 +32,5 @@ jobs:
       # Run postman collection
       - name: Run Postman Collection 
         run: |
-          newman run ./CMBCollections-Copy.json
+          newman run CMBCollections-Copy.json
           
